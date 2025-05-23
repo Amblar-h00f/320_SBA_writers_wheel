@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import {Card,CardContent,CardDescription,CardFooter,CardHeader,CardTitle,} from "@/components/ui/card";
+import { Button } from "../components/ui/button";
+import {Card,CardContent,CardDescription,CardFooter,CardHeader,CardTitle,} from "../components/ui/card";
 import { ArrowLeft } from "lucide-react";
-import { getTopicById, getRelatedTopics } from "@/lib/api";
+import { getTopicById, getRelatedTopics } from "../lib/api";
 
 export default function TopicDetail() {
   const { id } = useParams();
